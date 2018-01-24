@@ -28,7 +28,7 @@ class UsersController < ApplicationController
       # Sucess
 #      @user.send_activation_email
 #      flash[:info] = "Please check your email to activate your account."
-      redirect_to @user
+      redirect_to '/login'
     else
       # Failure
       render 'new'      
